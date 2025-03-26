@@ -1,0 +1,20 @@
+<div class="container mt-5">
+    <div class="mt-3 d-flex justify-content-center">
+        <h2>agregar Tarea</h2>
+    </div>
+    <div class="mt-3 d-flex justify-content-center">
+        <input type="text" #tareaInput class="form-contro mb-2 w-50" placeholder="Escribe una tarea">
+    </div>
+    <div class="mt-3 d-flex justify-content-center">
+        <button class="btn btn-primary" (click)="AgregarTarea(tareaInput.value); tareaInput.value =''">
+            Agregar Tarea
+        </button>
+    </div>
+    <div class="mt-3 d-flex justify-content-center">
+        @if (tarea)
+        {
+            <p> Tarea : {{tarea}} </p>
+        }
+    </div>
+
+</div>
