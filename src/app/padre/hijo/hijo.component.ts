@@ -12,11 +12,14 @@ export class HijoComponent {
 
   // @Input() mensaje!: string;
   
-  @Output() notificarPadre = new EventEmitter<string>();
+  // @Output() notificarPadre = new EventEmitter<string>();
 
-  enviarMensaje() {
-    this.notificarPadre.emit('Mensaje desde el componente hijo al padre');
-  }
+  // enviarMensaje() {
+  //   this.notificarPadre.emit('Mensaje desde el componente hijo al padre');
+  // }
+mensaje : string = 'Mesanje desde el componente hijo';
 
-
+cambiarMensaje(nuevoMensaje:string) {
+  this.mensaje = nuevoMensaje;
+}
 }
